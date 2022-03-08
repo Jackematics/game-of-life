@@ -30,9 +30,7 @@ const GameGrid = (props: { game: GameOfLife }) => {
   };
 
   const handleReset = () => {
-    setPlay(false);
-    setDisableStart(false);
-    clearInterval(intervalRef.current as NodeJS.Timeout);
+    handleStop();
     props.game.initialiseGrid(40);
   };
 
