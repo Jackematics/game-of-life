@@ -14,7 +14,7 @@ const GameGrid = (props: { game: GameOfLife }) => {
       intervalRef.current = setInterval(() => {
         props.game.tick();
         setGeneration((gen) => gen + 1);
-      }, 100);
+      }, 150);
     }
   }, [play]);
 
