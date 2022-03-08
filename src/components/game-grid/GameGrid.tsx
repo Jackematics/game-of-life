@@ -32,6 +32,7 @@ const GameGrid = (props: { game: GameOfLife }) => {
   const handleReset = () => {
     handleStop();
     props.game.initialiseGrid(40);
+    setGeneration(0);
   };
 
   return (
